@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(43, 42, 42);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 7%;
+}
+
+.logo-container h1 {
+    font-size: 1.5em;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+}
