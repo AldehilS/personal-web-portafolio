@@ -84,6 +84,19 @@ nav li a:hover {
   font-size: 25px;
 }
 
+#central-contact-me {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+#central-contact-me:hover {
+  background-color: white;
+  color: rgb(42, 42, 42);
+}
+
 @media only screen and (max-width: 800px) {
   .logo-container {
     display: flex;
