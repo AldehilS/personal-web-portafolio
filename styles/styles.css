@@ -13,6 +13,7 @@ header {
   display: flex;
   align-items: center;
   width: fit-content;
+  text-decoration: none;
 }
 
 .logo-link img {
