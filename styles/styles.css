@@ -2,23 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 header {
   background-color: rgb(42, 42, 42);
 }
 
-.logo-container {
+.logo-link {
   display: flex;
   align-items: center;
+  width: fit-content;
 }
 
-.logo-container img {
+.logo-link img {
   height: 100px;
 }
 
-.logo-container h1 {
-  font-size: 1.5em;
+.logo-link h1 {
+  font-size: 25px;
   color: white;
 }
 
@@ -51,11 +53,52 @@ nav li a:hover {
   color: rgb(42, 42, 42);
 }
 
+
+#main-image {
+  position: relative;
+}
+
+#main-image img{
+  width: 100%;
+  height: auto;
+}
+
+#main-image figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#main-image span {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+}
+
 @media only screen and (max-width: 800px) {
   .logo-container {
     display: flex;
-    justify-content: center;
+    justify-content: center
+  };
+  
+  .logo-link {
     margin-bottom: 2%;
+  }
+
+  #main-image figcaption {
+    font-size: 30px;
+  }
+
+  #main-image span {
+    font-size: 20px;
   }
 
 }
@@ -76,12 +119,16 @@ nav li a:hover {
     width: 100%;
   }
 
-  nav a {
+  nav li a {
     display: block;
     text-align: center;
   }
-}
 
-#main-image {
-  width: 100%;
+  #main-image figcaption {
+    font-size: 20px;
+  }
+
+  #main-image span {
+    font-size: 15px;
+  }
 }
