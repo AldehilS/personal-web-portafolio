@@ -17,11 +17,11 @@ header {
 }
 
 .logo-link img {
-  height: 100px;
+  height: 6.5em;
 }
 
 .logo-link h1 {
-  font-size: 25px;
+  font-size: 2em;
   color: white;
 }
 
@@ -42,7 +42,7 @@ nav li {
 }
 
 nav li a {
-  padding: 15px;
+  padding: 1em;
   background-color: rgb(42, 42, 42);
   color: white;
   font-size: 1.2em;
@@ -70,7 +70,7 @@ nav li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 40px;
+  font-size: 2.5em;
   text-align: center;
   font-weight: bold;
 }
@@ -81,10 +81,11 @@ nav li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 25px;
+  font-size: 1.7em;
+  margin-top: 2%;
 }
 
-#central-contact-me {
+#main-image span a {
   text-decoration: none;
   color: white;
   padding: 10px;
@@ -92,7 +93,7 @@ nav li a:hover {
   margin-left: 10px;
 }
 
-#central-contact-me:hover {
+#main-image span a:hover {
   background-color: white;
   color: rgb(42, 42, 42);
 }
@@ -136,6 +137,7 @@ nav li a:hover {
   nav li a {
     display: block;
     text-align: center;
+    font-size: 1.2em;
   }
 
   #main-image figcaption {
@@ -144,5 +146,64 @@ nav li a:hover {
 
   #main-image span {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  .logo-container {
+    display: flex;
+    justify-content: center
+  };
+  
+  .logo-link {
+    margin-bottom: 2%;
+  }
+
+  #main-image figcaption {
+    font-size: 30px;
+  }
+
+  #main-image span {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-device-width: 600px) {
+  .logo-link h1 {
+    font-size: 3em;
+  }
+
+  .logo-link img {
+    height: 10em;
+  }
+  
+  nav {
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  nav li a {
+    display: block;
+    text-align: center;
+    font-size: 2.7em;
+  }
+
+  #main-image figcaption {
+    font-size: 3.3em;
+  }
+
+  #main-image span {
+    font-size: 2em;
   }
 }
