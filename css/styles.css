@@ -117,11 +117,10 @@ header span {
 }
 
 .card-container {
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    gap: 10%;
-    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     padding: 20px;
 }
 
@@ -181,11 +180,11 @@ header span {
 }
 
 ol {
-    padding: 40px;
     list-style-position: inside;
 }
 
 ol li {
+    padding: 20px;
     font-size: 20px;
 }
 
