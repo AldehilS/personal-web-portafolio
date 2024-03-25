@@ -137,9 +137,17 @@ header span {
     justify-content: space-evenly;
 }
 
+.card div {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .card img {
-    width: 360px;
-    height: 240px;
+    width: 100%;
 }
 
 .card p {
@@ -201,7 +209,7 @@ section {
 }
 
 .form-card {
-    padding: 80px;
+    padding: 20px 80px;
     display: flex;
     justify-content: center;
 }
@@ -212,7 +220,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 1000px;
     border-radius: 20px;
     padding: 20px 0;
 }
@@ -261,4 +269,38 @@ form ul button {
     border-color: #1A1A1A;
     cursor: pointer;
     width: 50%;
+}
+
+@media (max-width: 1180px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 720px;
+    }
+
+    .form-card {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 840px) {
+    .card {
+        width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-card {
+        width: 600px;
+    }
+
+    .card-container {
+        padding: 0;
+    }
+
+    .card {
+        width: 250px;
+    }
 }
