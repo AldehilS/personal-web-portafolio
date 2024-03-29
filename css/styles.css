@@ -301,6 +301,45 @@ form ul button {
     }
 
     .card {
-        width: 250px;
+        width: 290px;
+    }
+}
+
+@media (max-width: 630px) {
+    .main-card {
+        width: 95%;
+    }
+    
+    header {
+        place-items: center;
+    }
+
+    nav {
+        align-self: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 95%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
     }
 }
