@@ -79,10 +79,10 @@ header span {
 }
 
 .main-image {
-    height: 83vh;
+    height: 50.8vw;
     background-image: url(../assets/images/main-image-edited.webp);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,6 +294,7 @@ form ul button {
 @media (max-width: 768px) {
     .main-card {
         width: 600px;
+        height: 280px;
     }
 
     .card-container {
@@ -306,8 +307,33 @@ form ul button {
 }
 
 @media (max-width: 630px) {
+    .link-logo span {
+        font-size: 28px;
+    }
+
+    .link-logo img {
+        width: 75px;
+    }
+
     .main-card {
-        width: 95%;
+        width: 450px;
+        height: 260px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .main-card p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .social-media-link {
+        width: 50px;
     }
     
     header {
@@ -337,9 +363,50 @@ form ul button {
 
     nav ul li a {
         display: block;
+        font-size: 20px;
     }
 
     .card-container {
         grid-template-columns: 1fr;
+    }
+
+    .card h1 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .menu-desplegable {
+        font-size: 16px;
+    }
+
+    .menu-desplegable select {
+        font-size: 16px;
+    }
+
+    ol li {
+        font-size: 18px;
+    }
+
+    form ul {
+        gap: 20px;
+    }
+
+    form ul li label {
+        font-size: 18px;
+    }
+
+    form ul li input {
+        font-size: 18px;
+    }
+
+    form ul li textarea {
+        font-size: 18px;
+    }
+
+    form ul button {
+        font-size: 18px;
     }
 }
