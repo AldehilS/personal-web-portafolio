@@ -181,7 +181,7 @@ header span {
 }
 
 .about-me img {
-    width: 455;
+    width: 455px;
     height: fit-content;
     border-radius: 100%;
     margin: 50px 0;
@@ -409,6 +409,10 @@ form ul button {
     form ul button {
         font-size: 18px;
     }
+
+    .about-me p {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -438,7 +442,6 @@ form ul button {
         width: 36px;
     }
 
-
     .main-image {
         height: 100vw;
         background-size: cover;
@@ -450,5 +453,19 @@ form ul button {
 
     .menu-desplegable select {
         font-size: 14px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+    }
+
+    .about-me img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-me img {
+        width: 280px;
     }
 }
