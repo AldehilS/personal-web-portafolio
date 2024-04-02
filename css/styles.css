@@ -137,6 +137,19 @@ header span {
     justify-content: space-evenly;
 }
 
+.card:hover {
+    box-shadow: 10px 5px 5px #2A2A2A73;
+    background-color: #D8D8D8;
+}
+
+.card:hover h1 {
+    color: #2A2A2A;
+}
+
+.card:hover p {
+    color: #2A2A2A;
+}
+
 .card div {
     width: 100%;
     aspect-ratio: 1/1;
@@ -269,6 +282,11 @@ form ul button {
     border-color: #1A1A1A;
     cursor: pointer;
     width: 50%;
+}
+
+form ul button:hover {
+    background-color: #D8D8D8;
+    color: #1A1A1A;
 }
 
 @media (max-width: 1180px) {
