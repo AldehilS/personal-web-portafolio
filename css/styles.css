@@ -142,7 +142,7 @@ header span {
     background-color: #D8D8D8;
 }
 
-.card:hover h1 {
+.card:hover .card-title {
     color: #2A2A2A;
 }
 
@@ -161,6 +161,12 @@ header span {
 
 .card img {
     width: 100%;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
 }
 
 .card p {
@@ -394,6 +400,10 @@ form ul button:hover {
 
     .card p {
         font-size: 14px;
+    }
+
+    .card .card-title {
+        font-size: 16px;
     }
 
     .menu-desplegable {
