@@ -64,11 +64,10 @@ nav {
       font-size: 20px;
       text-decoration: none;
       padding: 10px 20px;
-    }
-
-    a:hover {
-      background-color: map-get($colors, text_primary);
-      color: map-get($colors, bg_secondary);
+      &:hover {
+        background-color: map-get($colors, text_primary);
+        color: map-get($colors, bg_secondary);
+      }
     }
   }
 }
@@ -168,17 +167,17 @@ nav {
     text-align: center;
     width: 90%;
   }
-}
-.card:hover {
-  box-shadow: 10px 5px 5px #2a2a2a73;
-  background-color: map-get($colors, text_primary);
-
-  .card-title {
-    color: map-get($colors, bg_secondary);
-  }
-
-  p {
-    color: map-get($colors, bg_secondary);
+  &:hover {
+    box-shadow: 10px 5px 5px #2a2a2a73;
+    background-color: map-get($colors, text_primary);
+  
+    .card-title {
+      color: map-get($colors, bg_secondary);
+    }
+  
+    p {
+      color: map-get($colors, bg_secondary);
+    }
   }
 }
 
@@ -293,12 +292,12 @@ section {
         border-color: map-get($colors, bg_onSecondary);
         cursor: pointer;
         width: 50%;
+        &:hover {
+          background-color: map-get($colors, text_primary);
+          color: map-get($colors, bg_onSecondary);
+        }
       }
 
-      button:hover {
-        background-color: map-get($colors, text_primary);
-        color: map-get($colors, bg_onSecondary);
-      }
     }
   }
 }
