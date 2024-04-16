@@ -1,0 +1,11 @@
+footer {
+    background-color: map-get($colors, bg_secondary);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      font-size: 20px;
+    }
+  }

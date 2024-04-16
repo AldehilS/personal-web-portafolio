@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: map-get($colors, text_primary);
+  }
+
+  h1 {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    padding: 20px;
+  }
+  
+  h3 {
+    padding: 20px;
+  }
+
+  ol {
+    list-style-position: inside;
+  
+    li {
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+  
+  hr {
+    width: 95%;
+    margin: 40px 2.5%;
+    height: 5px;
+    background-color: map-get($colors, text_primary);
+    border-radius: 20px;
+  }
+  
+  section {
+    padding: 20px;
+  }

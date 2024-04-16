@@ -1,0 +1,10 @@
+.menu-desplegable {
+  margin: 20px;
+  font-size: 20px;
+
+  select {
+    font-size: 20px;
+    background-color: map-get($colors, bg_secondary);
+    border-color: map-get($colors, bg_secondary);
+  }
+}
