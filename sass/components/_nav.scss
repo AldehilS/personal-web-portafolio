@@ -1,0 +1,23 @@
+nav {
+  align-self: flex-end;
+  margin: 20px;
+  margin-top: 0;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  li {
+    a {
+      font-size: 1.375rem;
+      text-decoration: none;
+      padding: 10px 20px;
+      &:hover {
+        background-color: map-get($colors, text_primary);
+        color: map-get($colors, bg_secondary);
+      }
+    }
+  }
+}

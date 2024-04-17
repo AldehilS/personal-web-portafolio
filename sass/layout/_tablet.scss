@@ -1,0 +1,86 @@
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  .link-logo {
+    img {
+      width: 70px;
+    }
+
+    span {
+      font-size: 1.625rem;
+    }
+  }
+
+  .main-image {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .main-card {
+    width: 78%;
+  }
+
+  .social-media-container {
+    .social-media-link {
+      width: 50px;
+    }
+  }
+
+  .card-container {
+    padding: 0;
+  }
+
+  .card {
+    width: 320px;
+
+    .card-title {
+      font-size: 1.375rem;
+    }
+  }
+
+  .about-me {
+    padding-top: 20px;
+
+    p {
+      margin-bottom: 50px;
+    }
+  }
+
+  ol {
+    li {
+      font-size: 1.125rem;
+    }
+  }
+
+  .form-card {
+    padding: 50px 80px;
+
+    form {
+      ul {
+        li {
+          label {
+            font-size: 1.125rem;
+          }
+
+          input {
+            font-size: 1.125rem;
+          }
+        }
+
+        button {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

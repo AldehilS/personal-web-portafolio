@@ -1,0 +1,11 @@
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+
+  .social-media-link {
+    width: 60px;
+    background-color: map-get($colors, text_primary);
+    border-radius: 100%;
+  }
+}
