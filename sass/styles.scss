@@ -1,11 +1,15 @@
+// Colors
 @import "./utilities/maps";
 
+// Page reset
 @import "./base/reset";
 
+// Main layouts
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
 
+// Components
 @import "./components/nav";
 @import "./components/brand";
 @import "./components/main-image";
@@ -17,8 +21,8 @@
 @import "./components/about-me";
 @import "./components/form-card";
 
+// Responsive design
 @import "./layout/desktop-small";
 @import "./layout/tablet";
 @import "./layout/mobile";
 @import "./layout/mobile-small";
-// @import "./layout/media-queries";
