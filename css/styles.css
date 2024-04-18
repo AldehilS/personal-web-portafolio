@@ -46,6 +46,13 @@ header {
   flex-direction: column;
 }
 
+.transparent-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 96%;
+}
+
 main {
   background-color: #3f3f3f;
 }
@@ -75,6 +82,7 @@ nav li a {
   font-size: 1.375rem;
   text-decoration: none;
   padding: 10px 20px;
+  transition: all 300ms ease-in-out;
 }
 nav li a:hover {
   background-color: #d8d8d8;
@@ -95,10 +103,10 @@ nav li a:hover {
 }
 
 .main-image {
-  height: 50.8vw;
+  height: 100vh;
   background-image: url(../assets/images/main-image-edited.webp);
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,11 +121,26 @@ nav li a:hover {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  animation-name: main-card-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 .main-card h1 {
   padding: 0;
 }
 
+@keyframes main-card-animation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .social-media-container {
   display: flex;
   flex-direction: row;
@@ -148,6 +171,7 @@ nav li a:hover {
   margin: 20px 0px;
   border-radius: 20px;
   justify-content: space-evenly;
+  transition: all 300ms ease-in-out;
 }
 .card div {
   width: 100%;
@@ -172,8 +196,6 @@ nav li a:hover {
 .card:hover {
   box-shadow: 10px 5px 5px rgba(42, 42, 42, 0.4509803922);
   background-color: #d8d8d8;
-}
-.card:hover .card-title {
   color: #2a2a2a;
 }
 .card:hover p {
@@ -197,6 +219,9 @@ nav li a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.about-me h1 {
+  width: 100%;
 }
 .about-me p {
   width: 740px;
@@ -262,6 +287,7 @@ nav li a:hover {
   border-color: #1a1a1a;
   cursor: pointer;
   width: 50%;
+  transition: all 300ms ease-in-out;
 }
 .form-card form ul button:hover {
   background-color: #d8d8d8;
@@ -339,8 +365,8 @@ nav li a:hover {
     font-size: 1.625rem;
   }
   .main-image {
-    height: 60vh;
     background-size: cover;
+    height: 70vh;
   }
   .main-card {
     width: 78%;
@@ -379,6 +405,12 @@ nav li a:hover {
     font-size: 1.125rem;
   }
 }
+@media (max-width: 1023px) and (max-height: 950px) {
+  .transparent-header {
+    position: static;
+    opacity: 100%;
+  }
+}
 @media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
@@ -391,6 +423,10 @@ nav li a:hover {
   }
   header {
     align-items: center;
+  }
+  .transparent-header {
+    position: static;
+    opacity: 100%;
   }
   .link-logo img {
     width: 60px;
@@ -416,6 +452,10 @@ nav li a:hover {
     font-size: 1rem;
     width: 100%;
     padding: 15px 0;
+  }
+  .main-image {
+    height: 60vh;
+    background-size: cover;
   }
   .main-card {
     height: 260px;
@@ -468,6 +508,16 @@ nav li a:hover {
     font-size: 1rem;
   }
 }
+@media (max-height: 767px) {
+  .transparent-header {
+    position: static;
+    opacity: 100%;
+  }
+  .main-image {
+    height: 100vh;
+    background-size: cover;
+  }
+}
 @media (max-width: 480px) {
   h1 {
     font-size: 1.25rem;
@@ -480,6 +530,10 @@ nav li a:hover {
   }
   nav ul li a {
     font-size: 0.875rem;
+  }
+  .main-image {
+    height: 50vh;
+    background-size: cover;
   }
   .main-card {
     height: 200px;

@@ -22,8 +22,8 @@
   }
 
   .main-image {
-    height: 60vh;
     background-size: cover;
+    height: 70vh;
   }
 
   .main-card {
@@ -82,5 +82,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1023px) and (max-height: 950px) {
+  .transparent-header {
+    position: static;
+    opacity: 100%;
   }
 }

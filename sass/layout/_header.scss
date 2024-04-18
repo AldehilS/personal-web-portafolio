@@ -1,5 +1,12 @@
 header {
-    background-color: map-get($colors, bg_secondary);
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: map-get($colors, bg_secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.transparent-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 96%;
+}
