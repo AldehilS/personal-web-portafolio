@@ -1,0 +1,11 @@
+@media (max-height: 767px) {
+    .transparent-header {
+        position: static;
+        opacity: 100%;
+    }
+
+    .main-image {
+        height: 100vh;
+        background-size: cover;
+    }
+}
