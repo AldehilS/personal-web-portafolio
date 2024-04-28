@@ -5,6 +5,10 @@
   color: #d8d8d8;
 }
 
+body {
+  font-size: 16px;
+}
+
 h1 {
   padding: 20px;
   text-align: center;
@@ -89,6 +93,33 @@ nav li a:hover {
   color: #2a2a2a;
 }
 
+#mySidebar {
+  display: none;
+  align-self: flex-start;
+  margin: 0;
+  background-color: #333333;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+}
+#mySidebar ul {
+  flex-direction: column;
+  padding: 40px 20px;
+}
+#mySidebar ul li a {
+  display: block;
+  font-size: 1rem;
+  width: 100%;
+  padding: 15px 10px;
+}
+#mySidebar ul .sidebar-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+#mySidebar ul .sidebar-close button {
+  background-color: transparent;
+}
+
 .link-logo {
   padding: 10px;
   display: flex;
@@ -129,6 +160,7 @@ nav li a:hover {
 }
 .main-card h1 {
   padding: 0;
+  margin: 0;
 }
 
 @keyframes main-card-animation {
@@ -294,6 +326,33 @@ nav li a:hover {
   color: #1a1a1a;
 }
 
+.gg-close {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+}
+.gg-close::after, .gg-close::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  top: 8px;
+  left: 1px;
+}
+.gg-close::after {
+  transform: rotate(-45deg);
+}
+
 @media (max-width: 1279px) {
   h1 {
     font-size: 2rem;
@@ -435,23 +494,10 @@ nav li a:hover {
     font-size: 1.25rem;
   }
   nav {
-    align-self: center;
-    width: 95%;
+    display: none;
   }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-  nav ul li a {
+  #mySidebar {
     display: block;
-    font-size: 1rem;
-    width: 100%;
-    padding: 15px 0;
   }
   .main-image {
     height: 60vh;

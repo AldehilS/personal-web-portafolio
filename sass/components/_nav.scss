@@ -23,3 +23,32 @@ nav {
     }
   }
 }
+
+#mySidebar {
+  display: none;
+  align-self: flex-start;
+  margin: 0;
+  background-color: map-get($colors, sidebar);
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+  ul {
+    flex-direction: column;
+    padding: 40px 20px;
+    li {
+      a {
+        display: block;
+        font-size: 1rem;
+        width: 100%;
+        padding: 15px 10px;
+      }
+    }
+    .sidebar-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      button {
+        background-color: transparent;
+      }
+    }
+  }
+}
