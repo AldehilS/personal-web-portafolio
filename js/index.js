@@ -5,3 +5,9 @@ function openSidebar() {
 function closeSidebar() {
   document.getElementById("mySidebar").style.display = "none";
 }
+
+window.onresize = function (event) {
+  if (window.innerWidth > 767) {
+    closeSidebar()
+  }
+};
