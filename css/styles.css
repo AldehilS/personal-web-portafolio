@@ -49,6 +49,9 @@ header {
   display: flex;
   flex-direction: column;
 }
+header .open-menu-button {
+  display: none;
+}
 
 .transparent-header {
   position: absolute;
@@ -95,7 +98,9 @@ nav li a:hover {
 
 #mySidebar {
   display: none;
-  align-self: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   background-color: #333333;
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
@@ -103,6 +108,7 @@ nav li a:hover {
 #mySidebar ul {
   flex-direction: column;
   padding: 40px 20px;
+  margin-top: 15px;
 }
 #mySidebar ul li a {
   display: block;
@@ -111,13 +117,15 @@ nav li a:hover {
   padding: 15px 10px;
 }
 #mySidebar ul .sidebar-close {
-  position: absolute;
-  top: 0;
-  right: 0;
   margin: 10px;
 }
 #mySidebar ul .sidebar-close button {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: transparent;
+  border: none;
+  padding: 10px;
 }
 
 .link-logo {
@@ -326,33 +334,6 @@ nav li a:hover {
   color: #1a1a1a;
 }
 
-.gg-close {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  transform: scale(var(--ggs, 1));
-  width: 22px;
-  height: 22px;
-  border: 2px solid transparent;
-  border-radius: 40px;
-}
-.gg-close::after, .gg-close::before {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background: currentColor;
-  transform: rotate(45deg);
-  border-radius: 5px;
-  top: 8px;
-  left: 1px;
-}
-.gg-close::after {
-  transform: rotate(-45deg);
-}
-
 @media (max-width: 1279px) {
   h1 {
     font-size: 2rem;
@@ -482,6 +463,20 @@ nav li a:hover {
   }
   header {
     align-items: center;
+    justify-content: center;
+  }
+  header .open-menu-button {
+    display: block;
+    position: absolute;
+    left: 0;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  header .open-menu-button i.material-symbols-outlined {
+    font-size: 2rem;
   }
   .transparent-header {
     position: static;
@@ -495,9 +490,6 @@ nav li a:hover {
   }
   nav {
     display: none;
-  }
-  #mySidebar {
-    display: block;
   }
   .main-image {
     height: 60vh;
@@ -573,6 +565,9 @@ nav li a:hover {
   }
   p {
     font-size: 0.875rem;
+  }
+  header button {
+    margin: 0;
   }
   nav ul li a {
     font-size: 0.875rem;
