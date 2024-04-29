@@ -445,7 +445,7 @@ nav li a:hover {
     font-size: 1.125rem;
   }
 }
-@media (max-width: 1023px) and (max-height: 950px) {
+@media (max-width: 1023px) and (orientation: landscape) {
   .transparent-header {
     position: static;
     opacity: 100%;
