@@ -14,12 +14,14 @@
 
   <title>Contact - Aldehil Sánchez</title>
   <link rel="shortcut icon" href="../assets/images/white-logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
   <header>
+    <button class="open-menu-button" onclick="openSidebar()"><i class="material-symbols-outlined">menu</i></button>
     <a class="link-logo" href="../index.html">
       <img src="../assets/images/white-logo.png" alt="White logo of Aldehil">
       <span>Aldehil Sánchez</span>
@@ -27,10 +29,24 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about-me.html">About me</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about-me.html">About me</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="mySidebar" class="w3-sidebar">
+      <ul>
+        <li class="sidebar-close">
+          <button onclick="closeSidebar()">
+            <i class="material-symbols-outlined">close</i>
+          </button>
+        </li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about-me.html">About me</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -63,6 +79,7 @@
   <footer>
     <p>© Aldehil Sánchez 2024</p>
   </footer>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>
