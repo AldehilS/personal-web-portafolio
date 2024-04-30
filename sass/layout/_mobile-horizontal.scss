@@ -1,11 +1,5 @@
-@media (max-height: 767px) {
-  .transparent-header {
-    position: static;
-    opacity: 100%;
-  }
-
+@media (max-height: 767px) and (orientation: landscape) {
   .main-image {
-    height: 100vh;
-    background-size: cover;
+    min-height: 700px;
   }
 }
