@@ -535,7 +535,7 @@ nav li a:hover {
     height: fit-content;
   }
   .card div {
-    height: auto;
+    height: 250px;
   }
   .card .card-title {
     font-size: 1.25rem;
