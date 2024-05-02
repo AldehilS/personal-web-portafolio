@@ -2,6 +2,7 @@
   padding: 20px 80px;
   display: flex;
   justify-content: center;
+  min-height: 83vh;
 
   form {
     background-color: map-get($colors, bg_secondary);
