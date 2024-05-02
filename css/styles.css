@@ -458,9 +458,6 @@ nav li a:hover {
   .card-container {
     padding: 0;
   }
-  .card {
-    height: 800px;
-  }
   .card div {
     height: 250px;
   }
