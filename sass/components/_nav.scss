@@ -15,6 +15,7 @@ nav {
       text-decoration: none;
       padding: 10px 20px;
       transition: all 300ms ease-in-out;
+      border-radius: 5px;
 
       &:hover {
         background-color: map-get($colors, text_primary);

@@ -39,7 +39,7 @@
     background-color: map-get($colors, text_primary);
     color: map-get($colors, bg_secondary);
 
-    p {
+    p, .card-title {
       color: map-get($colors, bg_secondary);
     }
   }

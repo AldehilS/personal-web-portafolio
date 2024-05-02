@@ -22,6 +22,7 @@ h2 {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-weight: 700;
 }
 
 p {
@@ -89,6 +90,47 @@ footer p {
   font-size: 20px;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  background-color: #2a2a2a;
+  margin: 40px 0;
+  border-radius: 20px;
+  transition: all 300ms ease-in-out;
+}
+.about-me-card h2 {
+  width: 100%;
+  padding: 0;
+}
+.about-me-card .right-title {
+  text-align: right;
+}
+.about-me-card p {
+  width: 70%;
+  padding: 20px;
+}
+.about-me-card img {
+  width: 25%;
+  height: fit-content;
+  border-radius: 100%;
+  padding: 20px;
+}
+.about-me-card:hover {
+  box-shadow: 10px 5px 5px rgba(42, 42, 42, 0.4509803922);
+  width: 95%;
+}
+
 nav {
   align-self: flex-end;
   margin: 20px;
@@ -104,6 +146,7 @@ nav li a {
   text-decoration: none;
   padding: 10px 20px;
   transition: all 300ms ease-in-out;
+  border-radius: 5px;
 }
 nav li a:hover {
   background-color: #d8d8d8;
@@ -252,7 +295,7 @@ nav li a:hover {
   background-color: #d8d8d8;
   color: #2a2a2a;
 }
-.card:hover p {
+.card:hover p, .card:hover .card-title {
   color: #2a2a2a;
 }
 
@@ -264,27 +307,6 @@ nav li a:hover {
   font-size: 1.375rem;
   background-color: #2a2a2a;
   border-color: #2a2a2a;
-}
-
-.about-me {
-  padding: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.about-me h1 {
-  width: 100%;
-}
-.about-me p {
-  width: 740px;
-}
-.about-me img {
-  width: 455px;
-  height: fit-content;
-  border-radius: 100%;
-  margin: 50px 0;
 }
 
 .form-card {
@@ -391,12 +413,13 @@ nav li a:hover {
   .form-card form ul button {
     font-size: 1.25rem;
   }
-  .about-me {
+  .about-me .about-me-card {
     padding: 40px 20px;
   }
-  .about-me img {
+  .about-me .about-me-card img {
     margin: 0;
     padding: 20px;
+    width: 30%;
   }
   footer p {
     font-size: 1rem;
@@ -436,12 +459,6 @@ nav li a:hover {
   }
   .card .card-title {
     font-size: 1.375rem;
-  }
-  .about-me {
-    padding-top: 20px;
-  }
-  .about-me p {
-    margin-bottom: 50px;
   }
   ol li {
     font-size: 1.125rem;
@@ -523,6 +540,20 @@ nav li a:hover {
   .menu-desplegable select {
     font-size: 1rem;
   }
+  .about-me .about-me-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me .about-me-card p {
+    width: 90%;
+  }
+  .about-me .about-me-card img {
+    width: 60%;
+  }
+  .about-me .about-me-card:nth-child(3) img {
+    order: 3;
+  }
   ol li {
     font-size: 1rem;
   }
@@ -592,11 +623,11 @@ nav li a:hover {
   .menu-desplegable select {
     font-size: 0.875rem;
   }
-  .about-me p {
+  .about-me .about-me-card p {
     margin-bottom: 20px;
   }
-  .about-me img {
-    width: 300px;
+  .about-me .about-me-card img {
+    width: 80%;
   }
   ol li {
     font-size: 0.875rem;
