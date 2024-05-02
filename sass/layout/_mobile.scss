@@ -67,8 +67,10 @@
   }
 
   .card {
-    width: 280px;
-
+    height: fit-content;
+    div {
+      height: auto;
+    }
     .card-title {
       font-size: 1.25rem;
       padding: 10px;

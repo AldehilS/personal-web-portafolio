@@ -45,6 +45,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .card {
+    div {
+      height: 300px;
+    }
+  }
+
   ol {
     li {
       font-size: 1.25rem;

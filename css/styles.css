@@ -262,26 +262,26 @@ nav li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 360px;
+  width: 80%;
   padding: 20px;
   margin: 20px 0px;
   border-radius: 20px;
-  justify-content: space-evenly;
   transition: all 300ms ease-in-out;
 }
 .card div {
   width: 100%;
-  aspect-ratio: 1/1;
+  height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .card div img {
-  width: 100%;
+  max-height: 100%;
+  max-width: 98%;
 }
 .card .card-title {
+  text-align: center;
   font-size: 1.625rem;
   font-weight: bold;
   padding: 20px;
@@ -399,6 +399,9 @@ nav li a:hover {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .card div {
+    height: 300px;
+  }
   ol li {
     font-size: 1.25rem;
   }
@@ -456,7 +459,10 @@ nav li a:hover {
     padding: 0;
   }
   .card {
-    width: 320px;
+    height: 800px;
+  }
+  .card div {
+    height: 250px;
   }
   .card .card-title {
     font-size: 1.375rem;
@@ -529,7 +535,10 @@ nav li a:hover {
     grid-template-columns: 1fr;
   }
   .card {
-    width: 280px;
+    height: fit-content;
+  }
+  .card div {
+    height: auto;
   }
   .card .card-title {
     font-size: 1.25rem;
@@ -613,7 +622,8 @@ nav li a:hover {
     width: 35px;
   }
   .card {
-    width: 250px;
+    width: 95%;
+    padding: 10px;
   }
   .card .card-title {
     font-size: 15px;

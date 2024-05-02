@@ -41,8 +41,10 @@
   }
 
   .card {
-    width: 320px;
-
+    height: 800px;
+    div {
+      height: 250px;
+    }
     .card-title {
       font-size: 1.375rem;
     }
