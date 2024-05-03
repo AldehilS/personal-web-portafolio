@@ -555,8 +555,16 @@ nav li a:hover {
     flex-direction: column;
     align-items: center;
   }
+  .about-me .about-me-card h2 {
+    text-align: center;
+  }
   .about-me .about-me-card p {
     width: 90%;
+    padding: 0;
+  }
+  .about-me .about-me-card ol {
+    width: 90%;
+    padding: 0;
   }
   .about-me .about-me-card img {
     width: 60%;
