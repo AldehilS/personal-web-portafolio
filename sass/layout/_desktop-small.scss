@@ -45,6 +45,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .card {
+    div {
+      height: 300px;
+    }
+  }
+
   ol {
     li {
       font-size: 1.25rem;
@@ -75,13 +81,17 @@
   }
 
   .about-me {
-    padding: 40px 20px;
-
-    img {
-      margin: 0;
-      padding: 20px;
+    .about-me-card {
+      padding: 40px 20px;
+  
+      img {
+        margin: 0;
+        padding: 20px;
+        width: 30%;
+      }
     }
   }
+
 
   footer p {
     font-size: 1rem;

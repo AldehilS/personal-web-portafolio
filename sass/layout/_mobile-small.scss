@@ -11,6 +11,12 @@
     font-size: 0.875rem;
   }
 
+  header {
+    button {
+      margin: 0;
+    }
+  }
+
   nav {
     ul {
       li {
@@ -41,7 +47,8 @@
   }
 
   .card {
-    width: 250px;
+    width: 95%;
+    padding: 10px;
 
     .card-title {
       font-size: 15px;
@@ -59,13 +66,16 @@
   }
 
   .about-me {
-    p {
-      margin-bottom: 20px;
-    }
-    img {
-      width: 300px;
+    .about-me-card {
+      p {
+        margin-bottom: 20px;
+      }
+      img {
+        width: 80%;
+      }
     }
   }
+
 
   ol {
     li {

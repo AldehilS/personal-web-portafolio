@@ -9,7 +9,11 @@
 @import "./layout/main";
 @import "./layout/footer";
 
+// Other layouts
+@import "./layout/about-me";
+
 // Components
+@import "./components/about-me-card";
 @import "./components/nav";
 @import "./components/brand";
 @import "./components/main-image";
@@ -18,7 +22,6 @@
 @import "./components/card-container";
 @import "./components/card";
 @import "./components/menu-desplegable";
-@import "./components/about-me";
 @import "./components/form-card";
 
 // Responsive design

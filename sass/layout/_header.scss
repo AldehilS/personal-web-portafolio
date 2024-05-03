@@ -2,6 +2,21 @@ header {
   background-color: map-get($colors, bg_secondary);
   display: flex;
   flex-direction: column;
+
+  .open-menu-button {
+    display: none;
+    position: absolute;
+    left: 0;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+
+    i.material-symbols-outlined {
+      font-size: 2rem;
+    }
+  }
 }
 
 .transparent-header {

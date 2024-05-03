@@ -14,11 +14,14 @@
 
   <title>About me - Aldehil Sánchez</title>
   <link rel="shortcut icon" href="../assets/images/white-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
   <header>
+    <button class="open-menu-button" onclick="openSidebar()"><i class="material-symbols-outlined">menu</i></button>
     <a class="link-logo" href="../index.html">
       <img src="../assets/images/white-logo.png" alt="White logo of Aldehil">
       <span>Aldehil Sánchez</span>
@@ -26,32 +29,67 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about-me.html">About me</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about-me.html">About me</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="mySidebar" class="w3-sidebar w3-animate-left">
+      <ul>
+        <li class="sidebar-close">
+          <button onclick="closeSidebar()">
+            <i class="material-symbols-outlined">close</i>
+          </button>
+        </li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about-me.html">About me</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="about-me">
-      <h1>About Me</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Duis tristique sollicitudin nibh sit amet commodo. Convallis a cras semper auctor neque vitae
-        tempus quam pellentesque. Amet massa vitae tortor condimentum lacinia quis. Etiam erat velit scelerisque in
-        dictum. Sed vulputate odio ut enim. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Orci
-        nulla pellentesque dignissim enim sit amet venenatis. Ipsum dolor sit amet consectetur. Lobortis scelerisque
-        fermentum dui faucibus in ornare. Tincidunt nunc pulvinar sapien et. Massa placerat duis ultricies lacus sed
-        turpis tincidunt id aliquet. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Rutrum
-        quisque non tellus orci ac auctor augue mauris augue. Urna id volutpat lacus laoreet. Eget nunc scelerisque
-        viverra mauris in aliquam sem. Sem et tortor consequat id porta nibh. Integer quis auctor elit sed vulputate.
-        Venenatis lectus magna fringilla urna porttitor. Porta nibh venenatis cras sed felis eget.</p>
-      <img src="../assets/images/Avatar.webp" alt="Male avatar">
+  <main class="about-me">
+    <h1>About Me</h1>
+    <section class="about-me-card">
+      <h2>Hi, I'm Aldehil</h2>
+      <p>Hello! I'm Aldehil, a passionate programmer, tech geek, and software engineer student with a special focus on
+        backend and cybersecurity. I love creating elegant and efficient solutions to complex problems. I'm in the 6th
+        semester of my career and I have collaborated with renowed companies. I'm always seeking new opportunities to
+        learn and grow in
+        this dynamic field.
+      </p>
+      <img src="../assets/images/me.jpg" alt="Me taking a photo on the mirror">
+    </section>
+    <section class="about-me-card">
+      <h2 class="right-title">Academic Background</h2>
+      <img src="../assets/images/tec-de-monterrey.jpg" alt="Tec de Monterrey CEM">
+      <p>My academic journey in Software engineering began at Tec de Monterrey, one of the most prestigious universities
+        in latin-america, in the year 2021. This solid theoretical foundation has allowed me to develop a deep
+        understanding of the
+        fundamental principles of programming, software engineering, and computer science.
+      </p>
+    </section>
+    <section class="about-me-card">
+      <h2>Certifications and Courses</h2>
+      <p>Throughout my career, I have complemented my formal education with a series of certifications and courses that
+        have kept me up-to-date with the latest trends and technologies. Highlights include courses completed on
+        Coursera, Cisco Net Academy and Udemy, including:
+      </p>
+      <ol>
+        <li>Specialization in python "Python 4 everybody" by Michigan University.</li>
+        <li>Clojure programming language.</li>
+        <li>Introduction to cybersecurity by Cisco.</li>
+        <li>Open Source Software Development Methods by Linux Foundation.</li>
+      </ol>
+      <img src="../assets/images/certificate.jpg" alt="Animated Certificate">
     </section>
   </main>
   <footer>
     <p>© Aldehil Sánchez 2024</p>
   </footer>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

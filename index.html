@@ -9,22 +9,39 @@
   <meta name="keywords" content="portfolio, projects, software engineering, programming, developer, coding">
   <meta name="author" content="Aldehil Sánchez">
   <meta name="copyright" content="2024 Aldehil Sánchez">
-  
+
   <!-- To do: Implement opengraph-->
-  
+
   <title>Home - Aldehil Sánchez</title>
   <link rel="shortcut icon" href="./assets/images/white-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header class="transparent-header">
+    <button class="open-menu-button" onclick="openSidebar()"><i class="material-symbols-outlined">menu</i></button>
     <a class="link-logo" href="./index.html">
       <img src="assets/images/white-logo.png" alt="White logo of Aldehil">
       <span>Aldehil Sánchez</span>
     </a>
     <nav>
       <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/projects.html">Projects</a></li>
+        <li><a href="./pages/about-me.html">About me</a></li>
+        <li><a href="./pages/skills.html">Skills</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="mySidebar" class="w3-sidebar w3-animate-left">
+      <ul>
+        <li class="sidebar-close">
+          <button onclick="closeSidebar()">
+            <i class="material-symbols-outlined">close</i>
+          </button>
+        </li>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./pages/projects.html">Projects</a></li>
         <li><a href="./pages/about-me.html">About me</a></li>
@@ -39,8 +56,8 @@
         <h1>Aldehil Sánchez</h1>
         <p><span>Software Engineer Student</span><span>&nbsp;| Computer Science |&nbsp;</span><span>Developer</span></p>
         <div class="social-media-container">
-          <!--No linkedin yet-->
-          <a href="#"><img class="social-media-link" src="assets/images/linkedin_3669739.png" alt="Linkedin logo"></a>
+          <a href="https://www.linkedin.com/in/aldehil-sanchez/" target="_blank"><img class="social-media-link"
+              src="assets/images/linkedin_3669739.png" alt="Linkedin logo"></a>
           <a href="https://github.com/AldehilS" target="_blank"><img class="social-media-link"
               src="assets/images/github-icon.png" alt="Github icon"></a>
           <a href="mailto:sanheraldehil@gmail.com"><img class="social-media-link" src="assets/images/email-icon.png"
@@ -53,57 +70,68 @@
       <div class="card-container">
         <article class="card">
           <div>
-            <img src="./assets/images/placeholder.svg" alt="Placeholder image">
+            <img src="./assets/images/amazon-project.png" alt="Screenshot of the amazon callcenter supervisor's system">
           </div>
-          <p class="card-title">Project 1</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt eget nullam non nisi est sit amet
-            facilisis.</p>
+          <h3 class="card-title">Qualicenter</h3>
+          <p>System, in collaboration with Amazon US, to enhance customer service at Quálitas, a leading Mexican
+            insurance
+            company. This tool enables call center supervisors to monitor team performance in real-time and identify
+            areas for improvement, optimizing operations and providing a better customer
+            satisfaction. This system makes use of AWS services and Amazon Connect for the real-time data analysis.</p>
         </article>
         <article class="card">
           <div>
-            <img src="./assets/images/placeholder.svg" alt="Placeholder image">
+            <img src="./assets/images/logistock.png" alt="Screenshot of the inventory system">
           </div>
-          <p class="card-title">Project 2</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt eget nullam non nisi est sit amet
-            facilisis.</p>
+          <h3 class="card-title">Logistock</h3>
+          <p>Versatile cloud-based inventory management system, compatible across multiple platforms. Centered on middle
+            and small businesses.
+            This innovative solution optimizes inventory control processes, ensuring seamless operations and increased
+            productivity.</p>
         </article>
         <article class="card">
           <div>
-            <img src="./assets/images/placeholder.svg" alt="Placeholder image">
+            <img src="./assets/images/crack-the-code-project.png"
+              alt="Screenshot of the videogame developed for crack the code">
           </div>
-          <p class="card-title">Project 3</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt eget nullam non nisi est sit amet
-            facilisis.</p>
+          <h3 class="card-title">Finding Koda</h3>
+          <p>In collaboration with Crack the Code, a company that sells programming courses for kids and teenagers, it
+            is a videogame
+            that recommends Crack the Code's programming courses based
+            on
+            the measured skills and habilities of the person that plays the game. It was developed in Unity, with
+            different levels, minigames and difficulties to ensure that it recommends the best option for the costumer.
+          </p>
         </article>
         <article class="card">
           <div>
-            <img src="./assets/images/placeholder.svg" alt="Placeholder image">
+            <img src="./assets/images/dif-project.png" alt="Image with the login screen of the DIFood app">
           </div>
-          <p class="card-title">Project 4</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt eget nullam non nisi est sit amet
-            facilisis.</p>
+          <h3 class="card-title">DIFood</h3>
+          <p>An application in collaboration with the Atizapán de Zaragoza government, specifically for the
+            Atizapán DIF. It enhances automation in the registration and usage processes of community dining rooms,
+            while providing demographic analysis of the users.</p>
+        </article>
+
+        <article class="card">
+          <div>
+            <img src="./assets/images/multi-agent-system.png" alt="Screenshot of the city simulation">
+          </div>
+          <h3 class="card-title">Multiagent city simulation</h3>
+          <p>City traffic simulation using multi-agent system modeling and sophisticated AI
+            algorithms. This simulation considers various factors such as the arrangement of traffic lights, pedestrian
+            crossings, and the density of agents in the system, providing a comprehensive understanding of traffic
+            dynamics and their impact on urban mobility."</p>
         </article>
         <article class="card">
           <div>
-            <img src="./assets/images/placeholder.svg" alt="Placeholder image">
+            <img src="./assets/images/finance-app.jpg" alt="Screenshots of the finance app">
           </div>
-          <p class="card-title">Project 5</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt eget nullam non nisi est sit amet
-            facilisis.</p>
-        </article>
-        <article class="card">
-          <div>
-            <img src="./assets/images/placeholder.svg" alt="Placeholder image">
-          </div>
-          <p class="card-title">Project 6</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt eget nullam non nisi est sit amet
-            facilisis.</p>
+          <h3 class="card-title">Personal Finance App</h3>
+          <p>Multiplatform personal finance application. This app helps users enhance their financial health and overall
+            quality of life. By providing intuitive
+            tools for budgeting, expense tracking, and goal setting, it empowers individuals to make informed financial
+            decisions and achieve their financial goals, leading to greater financial stability and peace of mind.</p>
         </article>
       </div>
     </section>
@@ -111,6 +139,7 @@
   <footer>
     <p>© Aldehil Sánchez 2024</p>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
