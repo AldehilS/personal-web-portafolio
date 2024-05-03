@@ -13,7 +13,7 @@
 
     h2 {
       width: 100%;
-      padding: 0;
+      padding: 20;
     }
 
     .right-title {
@@ -25,9 +25,13 @@
       padding: 20px;
     }
 
+    ol {
+      width: 70%;
+      padding: 20px;
+    }
+
     img {
       width: 25%;
-      height: fit-content;
       border-radius: 100%;
       padding: 20px;
     }
