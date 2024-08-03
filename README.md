@@ -15,3 +15,11 @@ My personal web to show my portafolio as a developer.
 * Redesigned responsive layout.
 * Added animations to the card elements, as well as the navbar links and buttons. The main card also has an animation when loading the page.
 * SEO optimization with meta tags and changed title of the pages.
+
+* ## License
+
+This project is licensed under the Apache License, Version 2.0 - see the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
+
+## Image Copyright
+
+Please note that the image `assets/images/dark-logo.png` is not covered by the Apache License, Version 2.0. The rights to this image are reserved by Aldehil de Jesús Sánchez Hernández. Unauthorized use of this image is prohibited without explicit permission.
